@@ -987,3 +987,24 @@ nav{
     color:#ffffff;
     border:1px solid #555;
 }
+/* ================= GALLERY ================= */
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
+}
